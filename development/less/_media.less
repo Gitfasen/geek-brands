@@ -1,0 +1,163 @@
+// Media ----------------------------------------
+@media screen and (max-width: 1920px) {}
+@media screen and (max-width: 1680px) {}
+@media screen and (max-width: 1440px) {}
+@media screen and (max-width: 1366px) {}
+@media screen and (max-width: 1356px) {}
+@media screen and (max-width: 1280px) {}
+@media screen and (max-width: 1200px) {
+	.map__block-content {
+		padding-left: 15px;
+	}
+	.reasons__slider .slick-dots {
+		padding: 30px 0;
+		bottom: -85px;
+		li {
+			button {
+				&:before {
+					content: '';
+					width: 10px;
+					height: 10px;
+					background: @main-color;
+					border-radius: 50%;
+				}
+			}
+		}
+	}
+}
+@media screen and (max-width: 1100px) {}
+@media screen and (max-width: 1170px) {}
+@media screen and (max-width: 1024px) {
+	.apartments-wr-row {
+		margin-top: 30px;
+	}
+	.reasons__slider .slick-arrow {
+		display: none!important;
+	}
+}
+@media screen and (max-width: 991px) {
+	.object-page .object-s-gallery-slider .slick-arrow.slick-next {
+		right: 0;
+	}
+	.object-page .object-s-gallery-slider .slick-arrow.slick-prev {
+		left: 0;
+	}
+	.section {
+		padding: 30px 0;
+	}
+	.object-page .object-s-prefer h3 {
+		margin-bottom: 30px;
+	}
+	.page-title.style2 {
+		position: relative;
+		&:before {
+			content: '';
+			display: block;
+			position: absolute;
+			top: 0;left: 0;
+			width: 100%;
+			height: 100%;
+			background: #ffffff;
+			opacity: 0.4;
+		}
+	}
+}
+@media screen and (max-width: 768px) {
+	.object-s-prefer {
+		background-position: center bottom;
+		background-repeat: no-repeat;
+	}
+	.object-s-want {
+		background-position: center top;
+		background-repeat: no-repeat;
+		.row {
+			justify-content: center;
+		}
+	}
+	.object-page .object-s-slider-item-content {
+		font-size: 30px;
+	}
+}
+@media screen and (max-width: 757px) {}
+@media screen and (max-width: 480px) {
+	.object-page {
+		.object-s-slider-item {
+			min-height: 400px;
+		}
+		.object-s-slider-item-content {
+			font-size: 20px;
+		}
+	}
+	
+	header#main-header .pre-header-line .phone-info-header {
+		flex-direction: column;
+		.tel-header {
+			font-size: 18px;
+		}
+	}
+	.mega-mnu .company-desc {
+		display: none;
+	}
+	.mega-mnu {
+		.mega-mnu-content {
+			display: block;
+			padding-top: 0;
+			overflow-y: scroll;
+			.mega-menu-items {
+				column-width: 0;
+				column-count: 1;
+				column-gap: 0;
+				text-align: center;
+				padding: 60px 30px;
+				position: relative;
+				z-index: 100;
+				&>li {
+					margin-bottom: 10px;
+					a {
+						font-size: 20px;
+					}
+				}
+			}
+		}		
+	}
+	header#main-header .pre-header-line .logo-container {
+		max-width: 150px;
+	}
+	.apartments-wr {
+		&-header {
+			&>div {
+				&:first-child {
+					display: none;
+				}
+				&:nth-child(2) {
+					width: 30%!important;
+					flex: auto;
+				}
+			}
+		}
+		&-item {
+			&>div {
+				&:first-child {
+					display: none;
+				}
+				&:nth-child(2) {
+					width: 30%!important;
+					flex: auto;
+				}
+			}
+			&:after {
+				display: none;
+			}
+		}
+	}
+}
+@media screen and (max-width: 414px) {
+	
+}
+@media screen and (max-width: 375px) {}
+@media screen and (max-width: 340px) {}
+@media screen and (max-width: 320px) {
+	header#main-header .pre-header-line .logo-container {
+		max-width: 100px;
+	}
+}

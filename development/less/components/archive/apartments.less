@@ -1,0 +1,158 @@
+@item-color: #e8ecf3;
+
+.apartments-wr {
+	padding-bottom: 60px;
+	min-height: 70vh;
+	&-header {
+		display: flex;
+		&>div {
+			flex: 1;
+			width: 22.5%;
+			padding: 10px 5px;
+			font-weight: bold;
+			color: rgba(0,0,0,.8);
+			&:first-child {
+				width: 10%;
+				flex: none;
+			}
+		}
+	}
+	&-item {
+		display: flex;
+		align-items: center;
+		margin-bottom: 10px;
+		background: @item-color;
+		.main-radius;
+		box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
+		transition: all 0.3s cubic-bezier(.25,.8,.25,1);
+		min-height: 64px;
+		cursor: pointer;
+		position: relative;
+		&:after {
+			content: '';
+			display: block;
+			width: 30px;
+			height: 30px;
+			background: url("data:image/svg+xml,%3Csvg enable-background='new 0 0 64 64' height='64px' version='1.1' viewBox='0 0 64 64' width='64px' xml:space='preserve' xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink'%3E%3Cg id='Layer_1'%3E%3Cg%3E%3Ccircle cx='32' cy='32' fill='%23ebae52' r='32'/%3E%3C/g%3E%3Cg opacity='0.2'%3E%3Cg%3E%3Cpath d='M28.962,25.343c-0.417-4.794-5.418-7.146-5.63-7.242c-0.199-0.094-0.421-0.122-0.635-0.085 c-5.774,0.958-6.642,4.318-6.677,4.458c-0.048,0.196-0.039,0.399,0.022,0.589c6.886,21.366,21.198,25.327,25.903,26.63 c0.362,0.1,0.661,0.181,0.888,0.255C42.943,49.985,43.056,50,43.169,50c0.155,0,0.31-0.033,0.452-0.098 c0.144-0.065,3.544-1.667,4.375-6.891c0.037-0.227,0-0.463-0.105-0.668c-0.074-0.144-1.853-3.528-6.784-4.724 c-0.345-0.089-0.698,0.002-0.964,0.229c-1.556,1.329-3.705,2.745-4.632,2.891c-6.217-3.04-9.688-8.872-9.819-9.978 c-0.076-0.622,1.348-2.806,2.987-4.582C28.886,25.954,28.991,25.649,28.962,25.343z' fill='%23231F20'/%3E%3C/g%3E%3C/g%3E%3Cg%3E%3Cg%3E%3Cpath d='M28.962,23.343c-0.417-4.794-5.418-7.146-5.63-7.242c-0.199-0.094-0.421-0.122-0.635-0.085 c-5.774,0.958-6.642,4.318-6.677,4.458c-0.048,0.196-0.039,0.399,0.022,0.589c6.886,21.366,21.198,25.327,25.903,26.63 c0.362,0.1,0.661,0.181,0.888,0.255C42.943,47.985,43.056,48,43.169,48c0.155,0,0.31-0.033,0.452-0.098 c0.144-0.065,3.544-1.667,4.375-6.891c0.037-0.227,0-0.463-0.105-0.668c-0.074-0.144-1.853-3.528-6.784-4.724 c-0.345-0.089-0.698,0.002-0.964,0.229c-1.556,1.329-3.705,2.745-4.632,2.891c-6.217-3.04-9.688-8.872-9.819-9.978 c-0.076-0.622,1.348-2.806,2.987-4.582C28.886,23.954,28.991,23.649,28.962,23.343z' fill='%23e8ecf3'/%3E%3C/g%3E%3C/g%3E%3C/g%3E%3Cg id='Layer_2'/%3E%3C/svg%3E") center no-repeat;
+			background-size: contain;
+			position: absolute;
+			right: 15px;
+			top: 50%;
+			margin-top: -15px;
+		}
+		&:hover {
+			box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);
+			.main-bg();
+			color: #ffffff;			
+		}
+		&>div {
+			flex: 1;
+			width: 22.5%;
+			padding: 10px;
+			&:first-child {
+				width: 10%;
+				flex: none;
+			}
+		}
+		.apartment {
+			&-photo {
+				.img {
+					width: 30px;
+					height: 30px;
+					background-position: center;
+					background-size: contain;
+					background-repeat: no-repeat;
+					margin: 0 auto;
+				}
+			}
+		}
+	}
+}
+
+#apartments-popup-item {
+	max-width: 800px;
+	color: rgba(0,0,0,.8);
+	span {
+		font-weight: bold;
+	}
+	.popup {
+		&-title {
+			font-size: 20px;
+			margin-bottom: 15px;
+		}
+		&-btn {
+			max-width: 200px;
+			margin-top: 20px;
+			&:before {
+				max-width: 200px;
+				width: 100%;
+				cursor: pointer;
+			}
+		}
+		&-img {
+			display: none;
+			.img {
+				width: 100%;
+				min-height: 300px;
+				background-position: center;
+				background-repeat: no-repeat;
+				background-size: contain;
+			}
+			&.active {
+				display: block;
+			}
+		}
+		&-form {
+			display: none;
+			padding: 30px 0;
+			&.active {
+				display: block;
+			}
+		}
+	}
+	.apartments-popup-item-info {
+		padding: 20px;
+		background: #e8ecf3;
+		.main-radius();
+		height: 100%;
+    display: flex;
+    flex-direction: column;
+		justify-content: center;
+	}
+}
+
+.archive-from {
+	padding-top: 10px;
+	max-width: 400px;
+	margin: 0 auto;
+	&-label {
+		font-weight: bold;
+		margin: 15px 0;
+	}
+	.range-inputs {
+		margin-bottom: 15px;
+		&>div {
+			display: flex;
+			align-items: center;
+			span {
+				width: 15%;
+			}
+			input {
+				border-color: transparent;
+				.main-radius();
+				box-shadow: inset 0 0 7.52px 0.48px rgba(20,20,20,.08);
+				min-height: 64px;
+				&:focus {
+					border-color: @main-color;
+				}
+			}
+		}
+	}
+	.btn-blue {
+		color: #ffffff;
+		margin: 0 auto;
+		&:before {
+			cursor: pointer;
+		}
+	}
+}

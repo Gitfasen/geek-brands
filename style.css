@@ -1,0 +1,32 @@
+/*
+Theme Name: lptheme
+Theme URI: https://lpunity.com/
+Author: lpunity
+Author URI: https://lpunity.com/
+Description: Perfect theme, optimized for mobile.
+Version: 1.2
+License: GNU General Public License v2 or later
+License URI: license.txt
+Tags: two-columns, three-columns, left-sidebar, right-sidebar, custom-background, custom-header, custom-menu, editor-style, featured-images, flexible-header
+Text Domain: animo
+*/
+
+@font-face {
+  font-family: 'Gilroy';
+  src: url("./fonts/Gilroy/Gilroy-Light.eot");
+	src: url("./fonts/Gilroy/Gilroy-Light.eot?#iefix") format("embedded-opentype"), 
+	url("./fonts/Gilroy/Gilroy-Light.woff") format("woff"), 
+	url("./fonts/Gilroy/Gilroy-Light.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal; }
+
+@font-face {
+  font-family: 'Gilroy';
+  src: url("./fonts/Gilroy/Gilroy-ExtraBold.eot");
+	src: url("./fonts/Gilroy/Gilroy-ExtraBold.eot?#iefix") format("embedded-opentype"), 
+	url("./fonts/Gilroy/Gilroy-ExtraBold.woff") format("woff"), 
+	url("./fonts/Gilroy/Gilroy-ExtraBold.ttf") format("truetype");
+  font-weight: bold;
+  font-style: normal; }
+
+

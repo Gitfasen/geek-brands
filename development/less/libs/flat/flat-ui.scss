@@ -1,0 +1,49 @@
+//
+// Flat UI Pro main stylesheet that aggregates all modules
+// --------------------------------------------------
+
+// Loading config with variables (changing them leads to changing a color scheme)
+@import "_variables.scss";
+
+// Utility mixins for greater good
+@import "_mixins.scss";
+
+// Loading custom fonts
+//@import url("https://fonts.googleapis.com/css?family=Lato:400,700,700italic,900,400italic,300");
+@import "modules/local-fonts.scss";
+@import "modules/glyphicons.scss";
+
+// Modules
+@import "modules/scaffolding.scss";
+@import "modules/type.scss";
+@import "modules/code.scss";
+@import "modules/thumbnails.scss";
+@import "modules/buttons.scss";
+@import "modules/button-groups.scss";
+@import "modules/forms.scss";
+@import "modules/input-groups.scss";
+@import "modules/radiocheck.scss";
+@import "modules/tagsinput.scss";
+@import "modules/typeahead.scss";
+@import "modules/progress-bars.scss";
+@import "modules/slider.scss";
+@import "modules/pager.scss";
+@import "modules/pagination.scss";
+@import "modules/tooltip.scss";
+@import "modules/dropdowns.scss";
+@import "modules/select.scss";
+@import "modules/navbar.scss";
+@import "modules/tiles.scss";
+@import "modules/switch.scss";
+@import "modules/video.scss";
+@import "modules/todo-list.scss";
+@import "modules/login.scss";
+@import "modules/palette.scss";
+@import "modules/share.scss";
+@import "modules/footer.scss";
+
+// Spaces
+@import "modules/spaces.scss";
+
+//Print styles
+@import "modules/print.scss";

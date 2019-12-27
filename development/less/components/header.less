@@ -1,0 +1,64 @@
+.home {
+	header#main-header {
+		background-position: center bottom;
+	}
+}
+header#main-header {
+	background-image: url(../img/header.jpg);
+	background-repeat: no-repeat;
+	background-position: center top;
+	background-size: cover;
+	.pre-header-line {
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
+		padding: 20px 0;
+		.logo-container {
+			width: 100%;
+			max-width: 250px;
+		}
+		.phone-info-header {
+			display: flex;
+			align-items: center;
+			justify-content: flex-end;
+			color: #18314f;
+			.tel-header {
+				color: #000;
+				font-size: 24px;
+				letter-spacing: 1px;
+			}
+			.callback-btn {
+				color: #000000;
+				display: inline-block;
+				vertical-align: middle;
+				border-bottom: 1px solid rgba(0, 0, 0, 0.2);
+				margin-left: 40px;
+				padding-bottom: 5px;
+				padding-top: 1px;
+				transition: all 0.25s ease;
+				&:hover {
+					opacity: 1;
+				}
+			}
+		}
+	}
+	.header-promo-block {
+		min-height: 800px;
+		padding-top: 90px;
+		.header-promo-block-info {
+			&-title {
+				font-weight: bold;
+				font-size: 50px;
+				text-transform: uppercase;
+				color: @main-title-color;
+				line-height: 60px;
+			}
+			p {
+				margin: 0;
+				font-size: 30px;
+				padding-top: 25px;
+				max-width: 400px;
+			}
+		}
+	}
+}

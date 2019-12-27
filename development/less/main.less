@@ -1,0 +1,176 @@
+@import "_libs";
+@import "_var";
+
+h1,h2,h3,h4,h5,h6 {
+	color: @main-title-color;
+}
+
+.error-page {
+	padding-bottom: 60px;
+}
+
+.sectio-bg {
+	background: url(../img/cloud-5.png) top center no-repeat, url(../img/cloud-6.png) bottom center no-repeat #d6e3f3;
+	background-size: 1920px;
+	max-width: 1920px;
+	margin: 0 auto;
+	padding: 60px 0;
+}
+
+.page-title-1 {
+	font-weight: 700;
+	font-size: 45px;
+	text-transform: uppercase;
+	color: @main-title-color;
+	line-height: 50px;
+}
+
+.section {
+	padding: 60px 0;
+}
+
+.js-range-slider {
+	display: none;
+}
+
+.irs.irs--round.js-irs-0 {
+	margin-bottom: 20px;
+}
+
+.irs--round .irs-handle {
+	border: 7px solid #ebae52;
+}
+
+.irs--round .irs-from, .irs--round .irs-single, .irs--round .irs-to {
+	background: #ebae52;
+}
+
+.irs--round .irs-from:before, .irs--round .irs-single:before, .irs--round .irs-to:before {
+	border-top-color: #ebae52;
+}
+
+.v-hidden {
+	visibility: hidden;
+}
+
+.o-hidden {
+	overflow: hidden;
+}
+
+.contact-page-title {
+	margin-bottom: 60px;
+	margin-top: 60px;
+	text-align: center;
+	font-size: 36px;
+	font-weight: bold;
+	text-transform: uppercase;
+}
+
+#callback h3 {
+	margin-top: 0;
+}
+
+.fancybox-button.fancybox-close-small {
+	width: 60px;
+	height: 60px;
+}
+
+.select2 {
+	min-height: 40px;
+	margin-bottom: 10px;
+	input {
+		height: auto;
+		margin: 0;
+	}
+}
+.select2-container--default .select2-search--inline .select2-search__field::placeholder {
+	color: rgba(0,0,0,.8);
+}
+.select2-container--default.select2-container--focus .select2-selection--multiple {
+	border-color: @main-color;
+}
+.select2-container--default .select2-selection--multiple {
+	border-color: transparent;
+	.main-radius();
+	box-shadow: inset 0 0 7.52px 0.48px rgba(20,20,20,.08);
+	padding: 5px 10px;
+	min-height: 64px;
+	display: flex;
+	align-items: center;
+	position: relative;
+	.select2-selection__choice__remove {
+		color: #ffffff;
+	}
+	.select2-selection__choice {
+		.main-bg();
+		border-color: transparent;
+	}
+	.select2-selection__rendered li {
+		color: #ffffff;
+		.main-radius();
+	}
+	&:before {
+		content: '';
+		position: absolute;
+    top: 0;
+    right: 6px;
+    width: 23px;
+    height: 100%;
+    background: url(../img/jquery.selectBox-arrow.gif) 50% center no-repeat;
+    border-left: solid 1px rgba(187,187,187,.36);
+    outline: 0;
+	}
+}
+
+.irs--round .irs-bar,
+.select2-container--default .select2-results__option--highlighted[aria-selected],
+.selectBox-options li.selectBox-selected {
+	.main-bg();
+}
+.selectBox-options li.selectBox-selected a{
+	color: #ffffff;
+	background: transparent;
+}
+
+.blog-nav a.page-numbers:hover {
+	.main-bg()!important;
+}
+
+.blog-nav a:not(#blog-load-more), .blog-nav ul li a, .blog-nav>span {
+	.main-radius();
+}
+
+.blog-nav a:before,
+.blog-nav a:after {
+	.main-radius();
+}
+
+input[type=email]:active, 
+input[type=email]:focus, 
+input[type=password]:active, 
+input[type=password]:focus, 
+input[type=search]:active, 
+input[type=search]:focus, 
+input[type=submit]:active, 
+input[type=submit]:focus, 
+input[type=tel]:active, 
+input[type=tel]:focus, 
+input[type=text]:active, 
+input[type=text]:focus, 
+textarea:active, 
+textarea:focus,
+.select2-container--default.select2-container--focus .select2-selection--multiple {
+	border-color: @main-color;
+}
+
+.btn-blue {
+	transition: all 0.5s ease;
+	border: none!important;
+	&:hover {
+		box-shadow: 0 10px 20px rgba(0,0,0,0.19), 0 6px 6px rgba(0,0,0,0.23);
+		transform: translateY(-3px);
+	}
+}
+
+@import "components/**";
+@import "_media.less";

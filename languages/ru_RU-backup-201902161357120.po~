@@ -1,0 +1,144 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: lptheme\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2018-11-07 07:32+0000\n"
+"PO-Revision-Date: 2018-12-28 07:58+0000\n"
+"Last-Translator: lpadmin <lpunity.info@gmail.com>\n"
+"Language-Team: Русский\n"
+"Language: ru_RU\n"
+"Plural-Forms: nplurals=3; plural=(n%10==1 && n%100!=11 ? 0 : n%10 >= 2 && "
+"n%10<=4 &&(n%100<10||n%100 >= 20)? 1 : 2);\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: Loco https://localise.biz/\n"
+"X-Loco-Version: 2.2.0; wp-5.0.2"
+
+#. Name of the template
+msgid "Blog Classic"
+msgstr "Блог"
+
+#. Bread
+msgid "Home"
+msgstr "Главная"
+
+#. Translation
+msgid "General"
+msgstr "Общие"
+
+#. Translation
+msgid "Header"
+msgstr "Шапка сайта"
+
+#. Translation
+msgid "Faveicon Settings"
+msgstr "Faveicon"
+
+#. Translation
+msgid "Title Wrapper"
+msgstr "Заголовок"
+
+#. Translation
+msgid "Theme Options Panel"
+msgstr "Панель настроек"
+
+#. Translation
+msgid "Leave a Comment"
+msgstr "Оставить комментарий"
+
+#. Translation
+msgid "Your comment"
+msgstr "Ваш комментарий"
+
+#. Translation
+msgid "Post"
+msgstr "Отправить"
+
+#. Translation
+msgid "Your comment is awaiting moderation."
+msgstr "Ваш комментарий отправлен на проверку."
+
+#. Translation
+msgid "Edit"
+msgstr "Редактировать"
+
+#. Translation
+msgid "Share:"
+msgstr "Поделиться:"
+
+#. Translation
+msgid "1 search result for"
+msgstr "1 результат по запросу"
+
+#. Translation
+msgid "search results for"
+msgstr "результаты по запросу"
+
+#. Translation
+msgid "Blog"
+msgstr "Блог"
+
+#. Translation
+msgid "Search results for"
+msgstr "Результаты поиска по запросу"
+
+#. Translation
+msgid "Author: %s"
+msgstr "Автор: %s"
+
+#. Translation
+msgid "Day: %s"
+msgstr "День: %s"
+
+#. Translation
+msgid "Month: %s"
+msgstr "Месяц: %s"
+
+#. Translation
+msgid "Year: %s"
+msgstr "Год: %s"
+
+#. Translation
+msgid "Archives"
+msgstr "Архивы"
+
+#. Translation
+msgid "Page not Found"
+msgstr "Страница не найдена"
+
+#. Translation
+msgid "Blog Archives"
+msgstr "Архив блога"
+
+#. Translation
+msgid "Author Archive"
+msgstr "Архив автора"
+
+#. Translation
+msgid "Search results"
+msgstr "Результаты поиска"
+
+#. Translation
+msgid "Back to Home"
+msgstr "Вернуться на главную"
+
+#. Translation
+msgid "Remove"
+msgstr "Удалить"
+
+#. Translation
+msgid "Cancel"
+msgstr "Отменить"
+
+#. Translation
+msgid "Options"
+msgstr "Опции"
+
+#. Translation
+msgid "View Website"
+msgstr "Перейти на сайт"
+
+#. Translation
+msgid "Metadata"
+msgstr "Метаданные"

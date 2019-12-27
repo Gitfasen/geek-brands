@@ -1,0 +1,100 @@
+.form-style-1 {
+	.form-input {
+		input {
+			position: relative;
+			background-color: #fff;
+			background-repeat: no-repeat;
+			padding: 0;
+			height: 64px;
+			line-height: 60px;
+			border: 0;
+			outline: 0;
+			font-size: 16px;
+			font-weight: 900;
+			border-radius: 32px;
+			margin-bottom: 25px;
+			padding-left: 20px;
+			box-shadow: inset 0px 0px 7.52px 0.48px rgba(20, 20, 20, 0.08);
+			letter-spacing: 1px;
+			transition: .3s;
+		}
+	}
+	.form-textarea {
+		textarea {
+			position: relative;
+			background-color: #fff;
+			background-repeat: no-repeat;
+			padding: 0;
+			border: 0;
+			outline: 0;
+			font-size: 16px;
+			font-weight: 900;
+			border-radius: 32px;
+			margin-bottom: 25px;
+			padding-left: 20px;
+			padding-top: 20px;
+			box-shadow: inset 0px 0px 7.52px 0.48px rgba(20, 20, 20, 0.08);
+			letter-spacing: 1px;
+			transition: .3s;
+		}
+	}
+	.btn-blue {
+		color: #ffffff;
+		border-color: transparent;
+		margin-top: 20px;
+		&:hover {
+			border-color: transparent;
+		}
+		&:active,
+		&:focus {
+			border-color: transparent;
+		}
+	}
+}
+
+
+div.wpcf7 .ajax-loader {
+	position: absolute;
+	bottom: 0;
+	right: 0;
+}
+
+.wpcf7-acceptance {
+	span.wpcf7-list-item {
+		margin: 0;
+	}
+	.wpcf7-list-item-label {
+		position: relative;
+		&:before {
+			display: inline-block;
+			width: 10px;
+			height: 10px;
+			border: 1px solid #000;
+			margin-right: 7px;
+			border-radius: 3px;
+		}
+		&:after {
+			position: absolute;
+			left: 5px;
+			top: -2px;
+			display: none;
+			width: 5px;
+			height: 11px;
+			border-right: 1px solid #000;
+			border-bottom: 1px solid #000;
+			transform: rotate(45deg);
+			transition: all 0.25s ease;
+		}
+	}
+	input:checked + .wpcf7-list-item-label {
+		&:after {
+			display: block;
+		}
+	}
+}
+div.wpcf7-mail-sent-ok {
+	margin-top: 15px;
+}
+.callback-form {
+	max-width: 450px;
+}

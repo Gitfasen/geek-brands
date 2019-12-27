@@ -1,0 +1,158 @@
+.mega-mnu {
+	position: fixed;
+	z-index: -100;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 0;
+	transition: all 0.5s ease;
+	transform: translateY(-100%);
+	visibility: hidden;
+	&.active {
+		transform: translateY(0);
+		height: 100%;
+		z-index: 999;
+		visibility: visible;
+	}
+	&:before {
+		content: '';
+		position: absolute;
+		display: block;
+		width: 100%;
+		height: 100%;
+		top: 0;
+		left: 0;
+		background-image: linear-gradient(90deg,#1064bd 0,#268acb 100%);
+		opacity: 0.98;
+	}
+	&:after {
+		content: '';
+		position: absolute;
+		width: 30%;
+		height: 100%;
+		top: 0;
+		right: 0;
+		display: block;
+		background: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='24.2' height='24.2' viewBox='0 0 24.2 24.2'%3E%3Cdefs%3E%3Cstyle%3E .cls-1%7Bfill:%23ffffff;stroke:%23ffffff;stroke-width:.2px%7D %3C/style%3E%3C/defs%3E%3Cg id='icon-in-city' transform='translate(.1 .1)'%3E%3Cg id='Group_516' data-name='Group 516'%3E%3Cg id='Group_515' data-name='Group 515'%3E%3Cpath id='Path_3568' d='M23.6 23.2h-2.4V10a.4.4 0 0 0-.4-.4h-5.6V.4a.4.4 0 0 0-.4-.4H4.4a.4.4 0 0 0-.4.4v22.8H.4a.4.4 0 0 0 0 .8h23.2a.4.4 0 1 0 0-.8zm-15.2 0H6.8v-3.6a.4.4 0 0 1 .4-.4H8a.4.4 0 0 1 .4.4zM10 10v13.2h-.8v-3.6A1.2 1.2 0 0 0 8 18.4h-.8A1.2 1.2 0 0 0 6 19.6v3.6H4.8V.8h9.6v8.8h-4a.4.4 0 0 0-.4.4zm10.4 13.2h-9.6V10.4h9.6z' class='cls-1' data-name='Path 3568'/%3E%3Cpath id='Path_3569' d='M202.688 112h-2.3a.384.384 0 0 0-.384.384v2.3a.384.384 0 0 0 .384.384h2.3a.384.384 0 0 0 .384-.384v-2.3a.384.384 0 0 0-.384-.384zm-.384 2.3h-1.536v-1.536h1.532z' class='cls-1' data-name='Path 3569' transform='translate(-189.939 -106.366)'/%3E%3Cpath id='Path_3570' d='M202.688 32h-2.3a.384.384 0 0 0-.384.384v2.3a.384.384 0 0 0 .384.384h2.3a.384.384 0 0 0 .384-.384v-2.3a.384.384 0 0 0-.384-.384zm-.384 2.3h-1.536v-1.532h1.532z' class='cls-1' data-name='Path 3570' transform='translate(-189.939 -30.464)'/%3E%3Cpath id='Path_3571' d='M122.688 112h-2.3a.384.384 0 0 0-.384.384v2.3a.384.384 0 0 0 .384.384h2.3a.384.384 0 0 0 .384-.384v-2.3a.384.384 0 0 0-.384-.384zm-.384 2.3h-1.536v-1.536h1.532z' class='cls-1' data-name='Path 3571' transform='translate(-113.963 -106.366)'/%3E%3Cpath id='Path_3572' d='M122.688 32h-2.3a.384.384 0 0 0-.384.384v2.3a.384.384 0 0 0 .384.384h2.3a.384.384 0 0 0 .384-.384v-2.3a.384.384 0 0 0-.384-.384zm-.384 2.3h-1.536v-1.532h1.532z' class='cls-1' data-name='Path 3572' transform='translate(-113.963 -30.464)'/%3E%3Cpath id='Path_3573' d='M122.688 192h-2.3a.384.384 0 0 0-.384.384v2.3a.384.384 0 0 0 .384.384h2.3a.384.384 0 0 0 .384-.384v-2.3a.384.384 0 0 0-.384-.384zm-.384 2.3h-1.536v-1.536h1.532z' class='cls-1' data-name='Path 3573' transform='translate(-113.963 -182.341)'/%3E%3Cpath id='Path_3574' d='M122.688 272h-2.3a.384.384 0 0 0-.384.384v2.3a.384.384 0 0 0 .384.384h2.3a.384.384 0 0 0 .384-.384v-2.3a.384.384 0 0 0-.384-.384zm-.384 2.3h-1.536v-1.536h1.532z' class='cls-1' data-name='Path 3574' transform='translate(-113.963 -258.316)'/%3E%3Cpath id='Path_3575' d='M320.384 307.072h2.3a.384.384 0 0 0 .384-.384v-2.3a.384.384 0 0 0-.384-.384h-2.3a.384.384 0 0 0-.384.384v2.3a.384.384 0 0 0 .384.384zm.384-2.3h1.532v1.528h-1.536z' class='cls-1' data-name='Path 3575' transform='translate(-303.902 -288.707)'/%3E%3Cpath id='Path_3576' d='M320.384 227.072h2.3a.384.384 0 0 0 .384-.384v-2.3a.384.384 0 0 0-.384-.384h-2.3a.384.384 0 0 0-.384.384v2.3a.384.384 0 0 0 .384.384zm.384-2.3h1.532v1.528h-1.536z' class='cls-1' data-name='Path 3576' transform='translate(-303.902 -212.731)'/%3E%3Cpath id='Path_3577' d='M320.384 387.072h2.3a.384.384 0 0 0 .384-.384v-2.3a.384.384 0 0 0-.384-.384h-2.3a.384.384 0 0 0-.384.384v2.3a.384.384 0 0 0 .384.384zm.384-2.3h1.532v1.528h-1.536z' class='cls-1' data-name='Path 3577' transform='translate(-303.902 -364.608)'/%3E%3Cpath id='Path_3578' d='M240.384 307.072h2.3a.384.384 0 0 0 .384-.384v-2.3a.384.384 0 0 0-.384-.384h-2.3a.384.384 0 0 0-.384.384v2.3a.384.384 0 0 0 .384.384zm.384-2.3h1.532v1.528h-1.536z' class='cls-1' data-name='Path 3578' transform='translate(-227.926 -288.707)'/%3E%3Cpath id='Path_3579' d='M240.384 227.072h2.3a.384.384 0 0 0 .384-.384v-2.3a.384.384 0 0 0-.384-.384h-2.3a.384.384 0 0 0-.384.384v2.3a.384.384 0 0 0 .384.384zm.384-2.3h1.532v1.528h-1.536z' class='cls-1' data-name='Path 3579' transform='translate(-227.926 -212.731)'/%3E%3Cpath id='Path_3580' d='M240.384 387.072h2.3a.384.384 0 0 0 .384-.384v-2.3a.384.384 0 0 0-.384-.384h-2.3a.384.384 0 0 0-.384.384v2.3a.384.384 0 0 0 .384.384zm.384-2.3h1.532v1.528h-1.536z' class='cls-1' data-name='Path 3580' transform='translate(-227.926 -364.608)'/%3E%3C/g%3E%3C/g%3E%3C/g%3E%3C/svg%3E%0A") no-repeat center bottom;
+		background-size: contain;
+		opacity: 0.05;
+	}
+	&-content {
+		display: flex;
+		align-items: center;
+		padding-top: 100px;
+		max-width: 990px;
+		height: 100%;
+		width: 100%;
+		margin: 0 auto;
+		position: relative;
+		opacity: 0.8;
+		z-index: 10;
+		color: #ffffff;
+		.mega-menu-items {
+			overflow-y: auto;
+			scrollbar-face-color:transparent;
+			scrollbar-arrow-color:transparent;
+			scrollbar-track-color:transparent;
+			scrollbar-shadow-color:transparent;
+			scrollbar-highlight-color:transparent;
+			scrollbar-3dlight-color:transparent;
+			scrollbar-darkshadow-Color:transparent;
+			&::-webkit-scrollbar {
+				width: 0px;
+			}
+			&::-webkit-scrollbar-track {
+				background: transparent; 
+			}
+
+			&::-webkit-scrollbar-thumb {
+				background: transparent; 
+			}
+
+			&::-webkit-scrollbar-thumb:hover {
+				background: transparent; 
+			}
+		}
+		&:before {
+			content: '';
+			width: 100%;
+			height: 30%;
+			display: block;
+			position: absolute;
+			top: 0;
+			left: 0;
+			background: url("data:image/svg+xml,%0A%3Csvg version='1.0' xmlns='http://www.w3.org/2000/svg' width='1280.000000pt' height='640.000000pt' viewBox='0 0 1280.000000 640.000000' preserveAspectRatio='xMidYMid meet'%3E%3Cmetadata%3E%0ACreated by potrace 1.15, written by Peter Selinger 2001-2017%0A%3C/metadata%3E%3Cg transform='translate(0.000000,640.000000) scale(0.100000,-0.100000)'%0Afill='%23ffffff' stroke='none'%3E%3Cpath d='M8125 4111 c-46 -12 -97 -41 -125 -72 l-26 -27 -55 14 c-134 36 -269%0A-32 -301 -152 -12 -44 -12 -44 -58 -44 -147 0 -270 -97 -270 -212 l0 -48 -42%0A0 c-129 0 -284 -47 -345 -105 -42 -41 -42 -41 -111 -37 -137 8 -279 -45 -335%0A-124 -28 -40 -35 -44 -74 -44 -33 0 -45 5 -53 21 -45 83 -442 135 -725 94%0A-182 -26 -275 -64 -275 -114 0 -25 -4 -27 -66 -39 -86 -16 -155 -46 -190 -83%0A-15 -16 -34 -29 -41 -29 -8 0 -25 -11 -39 -25 -24 -24 -34 -26 -122 -28 -78%0A-2 -105 -7 -139 -25 -46 -24 -73 -56 -73 -85 0 -13 -5 -17 -16 -13 -9 3 -22 6%0A-30 6 -11 0 -13 6 -9 20 18 57 -43 154 -125 195 -40 20 -48 29 -53 60 -16 101%0A-147 185 -367 237 -59 13 -139 21 -262 25 -173 6 -178 6 -178 27 0 111 -125%0A228 -300 281 -184 55 -431 58 -604 7 -24 -7 -42 -2 -95 25 -86 43 -155 57%0A-276 56 -157 -1 -290 -56 -385 -159 -44 -48 -90 -135 -90 -171 0 -22 -4 -23%0A-79 -23 -164 0 -277 -43 -371 -140 -51 -53 -62 -60 -96 -60 -104 -1 -234 -52%0A-311 -123 -60 -55 -83 -103 -83 -172 0 -54 -2 -58 -49 -104 -37 -36 -51 -59%0A-62 -99 -13 -52 -14 -53 -43 -46 -17 4 -67 7 -111 6 -181 -2 -325 -92 -325%0A-205 l0 -34 -73 -6 c-97 -8 -200 -41 -240 -77 -28 -25 -30 -31 -22 -56 12 -34%0A56 -61 144 -88 66 -21 71 -21 2291 -24 2471 -3 2276 -8 2339 63 26 31 51 88%0A51 122 0 16 74 73 95 73 9 0 32 -12 50 -26 52 -39 144 -64 239 -64 79 0 188%0A21 211 40 7 6 31 2 66 -12 45 -19 76 -23 195 -24 98 -2 151 -7 176 -17 105%0A-44 270 -40 372 8 45 21 55 23 100 13 116 -25 275 5 334 62 20 19 27 20 54 11%0A45 -16 97 -13 143 8 42 19 105 82 105 105 0 8 17 16 44 19 24 4 72 16 106 28%0A60 20 62 21 131 4 85 -21 228 -16 303 10 45 16 51 16 85 1 68 -31 146 -46 243%0A-46 117 0 183 13 265 51 47 23 67 27 81 20 34 -18 150 -28 220 -19 39 6 93 22%0A129 40 34 16 66 27 71 24 49 -30 381 -48 492 -26 25 4 46 7 48 5 2 -2 -2 -22%0A-9 -44 -11 -36 -10 -50 5 -97 29 -91 114 -170 239 -221 124 -51 162 -57 332%0A-57 151 1 165 3 248 31 l89 30 73 -37 c100 -50 175 -65 330 -65 137 0 222 19%0A304 66 27 16 40 18 60 10 135 -52 386 -36 500 30 34 20 34 20 85 0 157 -62%0A351 -49 475 32 35 23 37 23 81 6 25 -9 81 -23 126 -29 179 -28 372 47 425 164%0A10 23 19 50 19 61 0 17 10 22 58 31 149 29 212 134 135 225 -32 37 -82 63%0A-155 79 -50 11 -58 16 -63 41 -13 60 -110 131 -242 175 -118 40 -219 55 -393%0A61 -157 4 -168 6 -220 33 -73 38 -203 75 -317 90 -90 12 -347 9 -405 -6 -24%0A-5 -29 -2 -38 20 -18 48 -97 122 -163 152 -55 26 -73 29 -162 29 -87 0 -107%0A-3 -155 -26 -71 -33 -121 -77 -150 -131 l-22 -43 -59 28 c-199 95 -456 69%0A-588 -60 -53 -52 -58 -54 -86 -45 -42 15 -142 32 -184 32 -24 0 -40 6 -47 18%0A-6 9 -35 31 -65 47 -48 27 -63 30 -140 30 l-87 0 -4 53 c-8 88 -75 153 -185%0A175 -58 12 -60 13 -47 32 8 10 14 37 14 59 0 59 -33 101 -110 139 -60 30 -72%0A32 -162 32 l-98 0 0 31 c0 45 -54 112 -112 141 -50 25 -145 37 -193 24z'/%3E%3C/g%3E%3C/svg%3E%0A") no-repeat center top;
+			background-size: contain;
+			opacity: 0.05;
+		}
+	}
+	.close-btn {
+		position: absolute;
+		top: 30px;
+		left: 30px;
+		cursor: pointer;
+		z-index: 100;
+		box-shadow: inset 0 0 7.52px 0.48px rgba(20,20,20,.08);
+		width: 50px;
+		height: 50px;
+		line-height: 50px;
+		text-align: center;
+		font-size: 18px;
+		background: #ffffff;
+		border-radius: 32px;
+	}
+	.company-name {
+		color: #ffffff;
+		position: absolute;
+		top: 0px;
+		left: 40px;
+		height: 100%;
+		text-align: center;
+		font-size: 20px;
+		writing-mode: vertical-rl;
+		text-orientation: upright;
+		letter-spacing: 3px;
+	}
+	.company-desc {
+		color: #ffffff;
+		width: 100%;
+		position: absolute;
+		bottom: 15px;
+		left: 0;
+		text-align: center;
+	}
+	.mega-menu-items {
+		margin: 0;
+		padding: 0;
+		list-style: none;
+		column-width: 30vh;
+		column-count: 3;
+		column-gap: 30px;
+		ul {
+			margin: 0;
+			padding: 0;
+			list-style: none;	
+		}
+		li {
+			a {
+				color: #ffffff;
+				font-size: 20px;
+				margin-bottom: 10px;
+				transition: all 0.25s ease;
+				border-bottom: 1px dashed transparent;
+				&:hover {
+					border-color: #fff;
+				}
+			}
+		}
+		&>li {
+			&>a {
+				font-weight: bold;
+				text-transform: uppercase;
+				font-size: 28px;
+				letter-spacing: 1px;
+			}
+			margin-bottom: 30px;
+		}
+	}
+}
